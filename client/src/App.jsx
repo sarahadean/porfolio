@@ -1,26 +1,23 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Nav from './Nav'
-import Footer from './Footer'
-import ProjectContainer from './ProjectContainer'
-import About from './About'
-import ContactForm from './ContactForm'
-import Home from './Home'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import ProjectContainer from './components/ProjectContainer'
+import About from './components/About'
+import ContactForm from './components/ContactForm'
+import Home from './components/Home'
 
 function App() {
   
 
   return (
-    <>
-     <Nav />
-     <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/projects' element={<ProjectContainer/>}/>
-      <Route path='/contact-me' element={<ContactForm/>}/>
-      <Route path='/about' element={<About/>}/>
-     </Routes>
-     <Footer />
-    </>
+    <main>
+      <Nav />
+      <Home id="home"/>
+      <ProjectContainer id="projects"/>
+      <ContactForm id="contact"/>
+      <About id="about"/>
+      <Footer />
+      </main>
   )
 }
 
