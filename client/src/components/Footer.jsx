@@ -10,7 +10,7 @@ function Footer() {
         <Paper
       >
         <BottomNavigation>
-          <BottomNavigationAction />
+          <BottomNavigationAction /> 
           <BottomNavigationAction />
         {/* <IconButton to='http://github.com/sarahadean'>
         <FaGithub/>
